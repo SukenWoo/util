@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:jee="http://www.springframework.org/schema/jee" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-2.5.xsd
+        http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-2.5.xsd
+        http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd
+        http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd"
+	default-lazy-init="true">
+
+	<bean id="switchRouter" class="cn.org.gddsn.util.SwitchRouter">
+		<property name="router0" value="192.168.1.1" />
+    		<property name="router1" value="192.168.20.1" />
+		<property name="switchPeriod" value="3600" />
+		<property name="pingCount" value="3" />
+		<property name="hosts">
+			<list>
+				<value>AH.sss.jopens.cn</value>
+				<value>BJ.sss.jopens.cn</value>
+				<value>BU.sss.jopens.cn</value>
+				<value>CQ.sss.jopens.cn</value>
+				<value>FJ.sss.jopens.cn</value>
+				<value>GD.sss.jopens.cn</value>
+				<value>GS.sss.jopens.cn</value>
+				<value>GX.sss.jopens.cn</value>
+				<value>GZ.sss.jopens.cn</value>
+				<value>HA.sss.jopens.cn</value>
+				<value>HB.sss.jopens.cn</value>
+				<value>HE.sss.jopens.cn</value>
+				<value>HI.sss.jopens.cn</value>
+				<value>HL.sss.jopens.cn</value>
+				<value>HN.sss.jopens.cn</value>
+				<value>JL.sss.jopens.cn</value>
+				<value>JS.sss.jopens.cn</value>
+				<value>JX.sss.jopens.cn</value>
+				<value>LN.sss.jopens.cn</value>
+				<value>NM.sss.jopens.cn</value>
+				<value>NX.sss.jopens.cn</value>
+				<value>QH.sss.jopens.cn</value>
+				<value>SC.sss.jopens.cn</value>
+				<value>SD.sss.jopens.cn</value>
+				<value>SH.sss.jopens.cn</value>
+				<value>SN.sss.jopens.cn</value>
+				<value>SX.sss.jopens.cn</value>
+				<value>TJ.sss.jopens.cn</value>
+				<value>XJ.sss.jopens.cn</value>
+				<value>XZ.sss.jopens.cn</value>
+				<value>YN.sss.jopens.cn</value>
+				<value>ZJ.sss.jopens.cn</value>
+			</list>
+		</property>
+
+	</bean>
+</beans>
+
